@@ -21,6 +21,10 @@ module.exports = {
       },
       backgroundImage: {
         "bloom-gradient": "linear-gradient(to bottom, #2A2A3E, #0F1115)",
+        "grid-pattern": "url('./resources/Background_Grid.png')",
+        "paper-dark": "url('./resources/Texture_Dark.png')",
+        "paper-light": "url('./resources/Texture_Light.png')",
+        "green-texture": "url('./resources/Background_Green.png')",
       },
     },
   },

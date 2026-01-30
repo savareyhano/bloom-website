@@ -36,7 +36,10 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="bg-bloom-dark text-bloom-text font-body selection:bg-bloom-orange selection:text-white">
+<body
+  class="bg-bloom-dark bg-paper-dark text-bloom-text font-body selection:bg-bloom-orange selection:text-white relative">
+  <!-- Global Texture Overlay -->
+  <div class="fixed inset-0 pointer-events-none opacity-20 bg-paper-light mix-blend-overlay z-[60]"></div>
 
   <!-- Header -->
   <header class="w-full relative z-50">
@@ -48,9 +51,7 @@
       </a>
 
       <!-- CTA Button -->
-      <a href="https://goers.co/bloom2026series"
-        target="_blank"
-        rel="noopener noreferrer"
+      <a href="https://goers.co/bloom2026series" target="_blank" rel="noopener noreferrer"
         class="bg-bloom-blue text-white font-bold py-2 px-6 rounded-full hover:bg-white hover:text-bloom-blue transition-all duration-300 transform hover:scale-105 shadow-lg shadow-bloom-blue/30 text-sm md:text-base">
         BUY TICKET
       </a>
@@ -84,9 +85,7 @@
             Join us for an exclusive evening of music and mental wellness sessions.
           </p>
 
-          <a href="https://goers.co/bloom2026series"
-            target="_blank"
-            rel="noopener noreferrer"
+          <a href="https://goers.co/bloom2026series" target="_blank" rel="noopener noreferrer"
             class="hidden md:inline-block bg-bloom-orange text-white font-heading py-4 px-10 rounded-none border-2 border-transparent hover:bg-transparent hover:border-bloom-orange hover:text-bloom-orange transition-all duration-300 transform hover:-translate-y-1">
             GET TICKETS
           </a>
@@ -95,30 +94,30 @@
         <!-- Visual Content (Right on Desktop, Stacked Second on Mobile) -->
         <div class="relative flex justify-center items-center mt-8 md:mt-0">
           <!-- Decorative Elements -->
-          <img src="./resources/Orange_Line_Scribble.png" alt=""
-            class="absolute -top-10 -right-10 w-32 md:w-48 opacity-80 animate-spin-slow"
-            style="animation-duration: 20s;">
-          <img src="./resources/Orange_Swirl_G-Stroke.png" alt=""
-            class="absolute -bottom-12 -left-12 w-40 md:w-56 opacity-60">
+          <img src="./resources/Decor_Sparkle.png" alt=""
+            class="absolute -top-16 -right-16 w-40 md:w-56 opacity-100 animate-pulse" style="animation-duration: 3s;">
+          <img src="./resources/Decor_Blue_Oval.png" alt=""
+            class="absolute -bottom-12 -left-20 w-48 md:w-72 opacity-90 transform -rotate-12">
 
           <!-- Main Poster Image -->
           <div
-            class="relative z-10 p-2 border-2 border-bloom-text/20 rounded-2xl rotate-3 hover:rotate-0 transition-transform duration-500">
-            <img src="./resources/new/Master Flyer (1x1).jpeg" alt="Bloom Poster"
-              class="w-full max-w-xs md:max-w-md rounded-xl shadow-2xl shadow-bloom-orange/20 object-cover">
+            class="relative z-10 p-1 bg-white border-4 border-bloom-dark rotate-3 hover:rotate-0 transition-transform duration-500 shadow-[8px_8px_0px_0px_rgba(255,94,58,1)]">
+            <img src="./resources/Master_Flyer.jpg" alt="Bloom Poster"
+              class="w-full max-w-xs md:max-w-md bg-white p-2 border border-stone-200">
           </div>
         </div>
 
         <!-- Mobile CTA (Visible only on mobile) -->
         <div class="md:hidden flex justify-center w-full mt-8">
-          <a href="https://goers.co/bloom2026series"
-            target="_blank"
-            rel="noopener noreferrer"
+          <a href="https://goers.co/bloom2026series" target="_blank" rel="noopener noreferrer"
             class="bg-bloom-orange text-white font-heading py-3 px-8 rounded-none w-full max-w-xs text-center border-2 border-transparent hover:bg-transparent hover:border-bloom-orange hover:text-bloom-orange transition-all">
             GET TICKETS
           </a>
         </div>
       </div>
+      <!-- Hero Bottom Decoration -->
+      <div class="absolute bottom-0 left-0 w-full h-16 bg-repeat-x opacity-60"
+        style="background-image: url('./resources/Decor_Diamond.png'); background-size: 50px;"></div>
     </section>
 
     <!-- About Section -->
@@ -141,8 +140,8 @@
         </p>
 
         <!-- Decorative flower -->
-        <img src="./resources/Complete_Orange_Flower_With_Stem.png" alt=""
-          class="absolute top-0 right-0 w-24 md:w-32 opacity-20 transform translate-x-1/2 -translate-y-1/2 rotate-45">
+        <img src="./resources/Decor_Sparkle.png" alt=""
+          class="absolute top-0 right-0 w-24 md:w-32 opacity-40 transform translate-x-1/2 -translate-y-1/2 rotate-12">
       </div>
     </section>
 
@@ -152,12 +151,13 @@
         <!-- Visual (Desktop: Left) -->
         <div class="relative flex justify-center order-1 md:order-1">
           <div
-            class="w-64 h-64 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-bloom-orange/30 relative z-10">
+            class="w-64 h-64 md:w-96 md:h-96 overflow-hidden border-4 border-bloom-dark relative z-10 rotate-2 shadow-[6px_6px_0px_0px_rgba(59,111,224,1)]">
             <img src="./resources/Not_Just_A_Concert_Image.jpg" alt="Not Just A Concert"
               class="w-full h-full object-cover hover:scale-110 transition-transform duration-700">
           </div>
-          <!-- Wreath/Deco -->
-          <div class="absolute inset-0 border-[1px] border-bloom-text/10 rounded-full scale-110 animate-pulse"></div>
+          <!-- Diamond Deco -->
+          <img src="./resources/Decor_Diamond.png" class="absolute -top-6 -left-6 w-16 h-16 animate-bounce"
+            style="animation-duration: 4s;">
         </div>
 
         <!-- Text (Desktop: Right) -->
@@ -178,8 +178,10 @@
     </section>
 
     <!-- Feature 2: Feel-Good Energy (Zig-Zag: Text Left, Image Right) -->
-    <section id="feature_energy" class="py-12 md:py-20 relative">
-      <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+    <section id="feature_energy" class="py-12 md:py-20 relative bg-green-texture bg-cover bg-fixed">
+      <div class="absolute inset-0 bg-bloom-dark/80"></div> <!-- Overlay -->
+
+      <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-center relative z-10">
 
         <!-- Text (Desktop: Left, Mobile: Order 2) -->
         <div class="text-center md:text-left order-2 md:order-1 space-y-6">
@@ -199,22 +201,24 @@
         <!-- Visual (Desktop: Right, Mobile: Order 1) -->
         <div class="relative flex justify-center order-1 md:order-2">
           <div
-            class="w-64 h-64 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-bloom-blue/30 relative z-10">
+            class="w-64 h-64 md:w-96 md:h-96 overflow-hidden border-4 border-bloom-blue relative z-10 -rotate-2 shadow-[-6px_6px_0px_0px_rgba(255,255,255,0.2)]">
             <img src="./resources/Feel_Good_Energy_+_Mental_Clarity_Image.jpg" alt="Feel Good Energy"
               class="w-full h-full object-cover hover:scale-110 transition-transform duration-700">
           </div>
           <!-- Wreath/Deco -->
-          <img src="./resources/Stylized_Green_Stem.png" alt=""
-            class="absolute -bottom-6 -right-6 w-24 md:w-32 opacity-80"
-            style="filter: drop-shadow(0 0 10px rgba(59, 111, 224, 0.5));">
+          <img src="./resources/Decor_Blue_Circle.png" alt=""
+            class="absolute -bottom-6 -right-6 w-32 md:w-48 opacity-90 animate-pulse">
         </div>
       </div>
     </section>
 
     <!-- Gallery / Carousel Section -->
     <section id="gallery_section" class="py-16 md:py-24 bg-bloom-dark relative">
-      <div class="max-w-7xl mx-auto px-4 text-center mb-12">
-        <h2 class="font-heading text-3xl md:text-5xl lg:text-6xl text-center mb-8">
+      <div class="max-w-7xl mx-auto px-4 text-center mb-12 relative">
+        <!-- New Title Deco -->
+        <img src="./resources/Decor_Diamond.png" class="absolute left-1/2 -top-10 -translate-x-1/2 w-12 opacity-50">
+
+        <h2 class="font-heading text-3xl md:text-5xl lg:text-6xl text-center mb-8 inline-block relative">
           Bloom <span class="text-bloom-blue">IN MOTION</span>
         </h2>
         <div class="w-full h-px bg-gradient-to-r from-transparent via-bloom-text-secondary to-transparent opacity-30">
