@@ -155,7 +155,7 @@ const translations = {
   id: {
     "nav.buy_ticket": "AMBIL TIKET",
     "hero.next_show": "SHOW SELANJUTNYA!!",
-    "hero.date.day": "JUMAT",
+    "hero.date.day": "SABTU",
     "hero.date.month": "14 FEBRUARI",
     "hero.desc": "Gabung di malam penuh musik dan sesi <i>mental wellness</i> yang eksklusif.",
     "hero.get_tickets": "AMBIL TIKET",
