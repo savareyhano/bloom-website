@@ -200,7 +200,7 @@ const translations = {
   en: {
     "nav.buy_ticket": "BUY TICKET",
     "hero.next_show": "NEXT SHOW!!",
-    "hero.date.day": "FRIDAY",
+    "hero.date.day": "SATURDAY",
     "hero.date.month": "FEBRUARY 14",
     "hero.desc": "Join us for an exclusive evening of music and mental wellness sessions.",
     "hero.get_tickets": "GET TICKETS",
