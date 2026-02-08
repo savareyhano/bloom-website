@@ -45,16 +45,24 @@
   <header class="w-full relative z-50">
     <div class="max-w-7xl mx-auto px-4 py-4 md:py-6 flex justify-between items-center">
       <!-- Logo -->
-      <!-- Logo -->
       <a href="#" class="block hover:opacity-80 transition-opacity">
         <img src="./resources/Logo.png" alt="Bloom" class="h-8 md:h-12 w-auto object-contain">
       </a>
 
-      <!-- CTA Button -->
-      <a href="https://goers.co/bloom2026series" target="_blank" rel="noopener noreferrer"
-        class="bg-bloom-blue text-white font-bold py-2 px-6 rounded-full hover:bg-white hover:text-bloom-blue transition-all duration-300 transform hover:scale-105 shadow-lg shadow-bloom-blue/30 text-sm md:text-base">
-        BUY TICKET
-      </a>
+      <div class="flex items-center space-x-4">
+        <!-- Language Toggle -->
+        <button id="langToggle"
+          class="text-white hover:text-bloom-orange transition-colors font-heading text-sm border border-bloom-text/20 px-3 py-1 rounded-full">
+          ID | EN
+        </button>
+
+        <!-- CTA Button -->
+        <a href="https://goers.co/bloom2026series" target="_blank" rel="noopener noreferrer"
+          class="bg-bloom-blue text-white font-bold py-2 px-6 rounded-full hover:bg-white hover:text-bloom-blue transition-all duration-300 transform hover:scale-105 shadow-lg shadow-bloom-blue/30 text-sm md:text-base"
+          data-i18n="nav.buy_ticket">
+          BELI TIKET
+        </a>
+      </div>
     </div>
   </header>
 
@@ -68,26 +76,29 @@
 
         <!-- Text Content (Left on Desktop, Stacked First on Mobile) -->
         <div class="flex flex-col items-center md:items-start text-center md:text-left space-y-6 z-10 relative">
-          <p class="font-heading text-bloom-orange text-lg md:text-xl tracking-wider animate-pulse">
-            NEXT SHOW!!
+          <p class="font-heading text-bloom-orange text-lg md:text-xl tracking-wider animate-pulse"
+            data-i18n="hero.next_show">
+            PERTUNJUKAN BERIKUTNYA!!
           </p>
 
           <h1 class="font-heading text-4xl md:text-6xl lg:text-7xl leading-tight">
-            <span class="block">FRIDAY</span>
-            <span class="block text-transparent bg-clip-text bg-gradient-to-r from-bloom-blue to-bloom-cream">FEBRUARY
-              14</span>
+            <span class="block" data-i18n="hero.date.day">JUMAT</span>
+            <span class="block text-transparent bg-clip-text bg-gradient-to-r from-bloom-blue to-bloom-cream"
+              data-i18n="hero.date.month">14 FEBRUARI</span>
             <span class="block">2026</span>
           </h1>
 
           <div class="w-24 h-1 bg-bloom-orange rounded-full md:ml-1"></div>
 
-          <p class="text-bloom-text-secondary text-lg md:text-xl max-w-md font-light leading-relaxed">
-            Join us for an exclusive evening of music and mental wellness sessions.
+          <p class="text-bloom-text-secondary text-lg md:text-xl max-w-md font-light leading-relaxed"
+            data-i18n="hero.desc">
+            Bergabunglah dalam malam eksklusif musik dan sesi kesehatan mental.
           </p>
 
           <a href="https://goers.co/bloom2026series" target="_blank" rel="noopener noreferrer"
-            class="hidden md:inline-block bg-bloom-orange text-white font-heading py-4 px-10 rounded-none border-2 border-transparent hover:bg-transparent hover:border-bloom-orange hover:text-bloom-orange transition-all duration-300 transform hover:-translate-y-1">
-            GET TICKETS
+            class="hidden md:inline-block bg-bloom-orange text-white font-heading py-4 px-10 rounded-none border-2 border-transparent hover:bg-transparent hover:border-bloom-orange hover:text-bloom-orange transition-all duration-300 transform hover:-translate-y-1"
+            data-i18n="hero.get_tickets">
+            DAPATKAN TIKET
           </a>
         </div>
 
@@ -110,8 +121,9 @@
         <!-- Mobile CTA (Visible only on mobile) -->
         <div class="md:hidden flex justify-center w-full mt-8">
           <a href="https://goers.co/bloom2026series" target="_blank" rel="noopener noreferrer"
-            class="bg-bloom-orange text-white font-heading py-3 px-8 rounded-none w-full max-w-xs text-center border-2 border-transparent hover:bg-transparent hover:border-bloom-orange hover:text-bloom-orange transition-all">
-            GET TICKETS
+            class="bg-bloom-orange text-white font-heading py-3 px-8 rounded-none w-full max-w-xs text-center border-2 border-transparent hover:bg-transparent hover:border-bloom-orange hover:text-bloom-orange transition-all"
+            data-i18n="hero.get_tickets">
+            DAPATKAN TIKET
           </a>
         </div>
       </div>
@@ -125,18 +137,20 @@
       <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
         <div class="inline-block mb-6">
           <span
-            class="font-heading text-bloom-blue uppercase tracking-widest text-sm md:text-base border border-bloom-blue px-4 py-2 rounded-full">
-            WHAT IS Bloom
+            class="font-heading text-bloom-blue uppercase tracking-widest text-sm md:text-base border border-bloom-blue px-4 py-2 rounded-full"
+            data-i18n="about.tag">
+            APA ITU Bloom
           </span>
         </div>
 
-        <h2 class="font-heading text-3xl md:text-5xl lg:text-6xl mb-8 leading-tight">
-          An Oasis for <span class="text-bloom-orange">Inspiring Growth, Blossom at Every Turn</span>
+        <h2 class="font-heading text-3xl md:text-5xl lg:text-6xl mb-8 leading-tight" data-i18n="about.title">
+          Oase untuk <span class="text-bloom-orange">Pertumbuhan yang Menginspirasi, Mekar di Setiap Tikungan</span>
         </h2>
 
-        <p class="text-bloom-text-secondary text-lg md:text-2xl font-light leading-relaxed max-w-2xl mx-auto">
-          Where music and mental wellness meet. More than just hype, it’s a space to heal, connect, and feel good inside
-          out.
+        <p class="text-bloom-text-secondary text-lg md:text-2xl font-light leading-relaxed max-w-2xl mx-auto"
+          data-i18n="about.desc">
+          Di mana musik dan kesehatan mental bertemu. Lebih dari sekadar tren, ini adalah ruang untuk penyembuhan,
+          koneksi, dan merasa baik luar dalam.
         </p>
 
         <!-- Decorative flower -->
@@ -163,15 +177,17 @@
         <!-- Text (Desktop: Right) -->
         <div class="text-center md:text-left order-2 md:order-2 space-y-6">
           <div
-            class="inline-block bg-bloom-green/20 text-bloom-green border border-bloom-green px-4 py-1 rounded-full text-xs font-bold font-heading tracking-wider">
-            EXPERIENCE
+            class="inline-block bg-bloom-green/20 text-bloom-green border border-bloom-green px-4 py-1 rounded-full text-xs font-bold font-heading tracking-wider"
+            data-i18n="feature.concert.tag">
+            PENGALAMAN
           </div>
-          <h3 class="font-heading text-3xl md:text-5xl">
-            NOT JUST A <span
-              class="text-transparent bg-clip-text bg-gradient-to-r from-bloom-orange to-red-500">CONCERT</span>
+          <h3 class="font-heading text-3xl md:text-5xl" data-i18n="feature.concert.title">
+            BUKAN SEKADAR <span
+              class="text-transparent bg-clip-text bg-gradient-to-r from-bloom-orange to-red-500">KONSER</span>
           </h3>
-          <p class="text-bloom-text-secondary text-base md:text-lg leading-relaxed">
-            Bloom is more than lights and loud beats it’s a safe space to dance, let go, and just be yourself.
+          <p class="text-bloom-text-secondary text-base md:text-lg leading-relaxed" data-i18n="feature.concert.desc">
+            Bloom lebih dari sekadar cahaya dan dentuman keras, ini adalah ruang aman untuk menari, melepaskan penat,
+            dan menjadi diri sendiri.
           </p>
         </div>
       </div>
@@ -186,15 +202,17 @@
         <!-- Text (Desktop: Left, Mobile: Order 2) -->
         <div class="text-center md:text-left order-2 md:order-1 space-y-6">
           <div
-            class="inline-block bg-bloom-blue/20 text-bloom-blue border border-bloom-blue px-4 py-1 rounded-full text-xs font-bold font-heading tracking-wider">
-            Wellness
+            class="inline-block bg-bloom-blue/20 text-bloom-blue border border-bloom-blue px-4 py-1 rounded-full text-xs font-bold font-heading tracking-wider"
+            data-i18n="feature.energy.tag">
+            KESEHATAN
           </div>
-          <h3 class="font-heading text-3xl md:text-5xl">
-            FEEL-GOOD <span class="text-transparent bg-clip-text bg-gradient-to-r from-bloom-blue to-purple-500">ENERGY
-              + MENTAL CLARITY</span>
+          <h3 class="font-heading text-3xl md:text-5xl" data-i18n="feature.energy.title">
+            ENERGI <span class="text-transparent bg-clip-text bg-gradient-to-r from-bloom-blue to-purple-500">POSITIF
+              + KEJERNIHAN MENTAL</span>
           </h3>
-          <p class="text-bloom-text-secondary text-base md:text-lg leading-relaxed">
-            Well-being first, Bloom is here to remind you “it’s okay to slow down and check in with yourself.”
+          <p class="text-bloom-text-secondary text-base md:text-lg leading-relaxed" data-i18n="feature.energy.desc">
+            Utamakan kesehatan, Bloom hadir untuk mengingatkan "tidak apa-apa untuk melambat dan memeriksa diri
+            sendiri."
           </p>
         </div>
 
@@ -232,25 +250,26 @@
           <!-- Text -->
           <div class="order-2 space-y-6">
             <div
-              class="inline-block bg-bloom-orange/20 text-bloom-orange border border-bloom-orange px-4 py-1 rounded-full text-xs font-bold font-heading tracking-wider">
-              INSIGHT
+              class="inline-block bg-bloom-orange/20 text-bloom-orange border border-bloom-orange px-4 py-1 rounded-full text-xs font-bold font-heading tracking-wider"
+              data-i18n="mental.insight">
+              WAWASAN
             </div>
-            <h3 class="font-heading text-3xl md:text-5xl leading-tight">
-              CREATIVE <span
-                class="text-transparent bg-clip-text bg-gradient-to-r from-bloom-cream to-white">CULTURE</span>
+            <h3 class="font-heading text-3xl md:text-5xl leading-tight" data-i18n="mental.culture.title">
+              BUDAYA <span
+                class="text-transparent bg-clip-text bg-gradient-to-r from-bloom-cream to-white">KREATIF</span>
             </h3>
             <div class="space-y-4 text-bloom-text-secondary text-base md:text-lg leading-relaxed font-light">
-              <p>
-                In a social ecosystem founded on creativity, we often uncover mental health issues as we explore our
-                artistic depths. Sometimes, we are herded into this culture by necessity.
+              <p data-i18n="mental.culture.desc1">
+                Dalam ekosistem sosial yang didasari kreativitas, kita sering mengungkap masalah kesehatan mental saat
+                menggali kedalaman artistik kita. Terkadang, kita digiring ke budaya ini karena kebutuhan.
               </p>
-              <p class="italic border-l-2 border-bloom-orange pl-4">
-                "I often feel isolated, lacking relevance in my immediate environment. Searching for validation in a
-                unique way because my voice isn't represented by the dominant social groups."
+              <p class="italic border-l-2 border-bloom-orange pl-4" data-i18n="mental.culture.quote">
+                "Secara pribadi saya merasa terkucilkan, kurang relevan di lingkungan terdekat saya. Mencari validasi
+                dengan cara yang unik karena suara saya tidak terwakili oleh kelompok sosial yang dominan."
               </p>
-              <p>
-                Creativity allows us to validate our own voice when the environment fails to do so. It opens a dialogue
-                to find "openness" and connection.
+              <p data-i18n="mental.culture.desc2">
+                Kreativitas memungkinkan kita memvalidasi suara kita sendiri ketika lingkungan gagal melakukannya. Ini
+                membuka dialog untuk menemukan "keterbukaan" dan koneksi.
               </p>
             </div>
           </div>
@@ -259,12 +278,12 @@
         <!-- 2. The Metaphor: Origin vs. Destiny (Centering Focus) -->
         <div class="flex flex-col items-center space-y-12">
           <div class="text-center max-w-3xl mx-auto space-y-4">
-            <h3 class="font-heading text-2xl md:text-4xl">
-              ORIGIN <span class="text-bloom-blue">REDEFINED</span>
+            <h3 class="font-heading text-2xl md:text-4xl" data-i18n="mental.origin.title">
+              ASAL USUL <span class="text-bloom-blue">DIDEFINISIKAN ULANG</span>
             </h3>
-            <p class="text-bloom-text-secondary">
-              Does mental struggle birth creativity, or does the creative mind serve as a breeding ground for mental
-              struggle?
+            <p class="text-bloom-text-secondary" data-i18n="mental.origin.desc">
+              Apakah pergulatan mental melahirkan kreativitas, atau apakah pikiran kreatif menjadi tempat berkembang
+              biak bagi pergulatan mental?
             </p>
           </div>
 
@@ -275,7 +294,8 @@
                 class="w-full h-auto opacity-80 group-hover:opacity-100 transition-opacity duration-300">
               <div
                 class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-100 group-hover:opacity-0 transition-opacity duration-300">
-                <span class="font-heading text-2xl text-white text-center px-4">THE QUESTION</span>
+                <span class="font-heading text-2xl text-white text-center px-4"
+                  data-i18n="mental.question">PERTANYAAN</span>
               </div>
             </div>
 
@@ -285,19 +305,20 @@
                 class="w-full h-auto opacity-80 group-hover:opacity-100 transition-opacity duration-300">
               <div
                 class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-100 group-hover:opacity-0 transition-opacity duration-300">
-                <span class="font-heading text-2xl text-bloom-orange text-center px-4">THE ANSWER</span>
+                <span class="font-heading text-2xl text-bloom-orange text-center px-4"
+                  data-i18n="mental.answer">JAWABAN</span>
               </div>
             </div>
           </div>
 
           <div
             class="bg-bloom-dark/50 p-6 border border-bloom-text/10 max-w-2xl text-center backdrop-blur-md rounded-xl">
-            <p class="text-xl md:text-2xl font-heading text-white">
-              "The egg <span class="text-bloom-orange">didn't define</span> the chicken"
+            <p class="text-xl md:text-2xl font-heading text-white" data-i18n="mental.egg_quote">
+              "Telur <span class="text-bloom-orange">tidak mendefinisikan</span> ayam"
             </p>
-            <p class="mt-2 text-bloom-text-secondary text-sm md:text-base">
-              Your origins do not dictate who you become. You are not defined by your trauma or the "shell" you came
-              from.
+            <p class="mt-2 text-bloom-text-secondary text-sm md:text-base" data-i18n="mental.egg_desc">
+              Asal usulmu tidak menentukan siapa dirimu kelak. Kamu tidak didefinisikan oleh trauma atau "cangkang"
+              tempatmu berasal.
             </p>
           </div>
         </div>
@@ -311,8 +332,9 @@
               <img src="./resources/about mental health/3.png" alt="Detail Text Page"
                 class="w-full h-full object-cover">
             </div>
-            <p class="text-xs text-bloom-text-secondary/50 uppercase tracking-widest text-center lg:text-left w-full">
-              Excerpt from "Mental Health & Creative Culture"
+            <p class="text-xs text-bloom-text-secondary/50 uppercase tracking-widest text-center lg:text-left w-full"
+              data-i18n="mental.excerpt">
+              Kutipan dari "Kesehatan Mental & Budaya Kreatif"
             </p>
           </div>
 
@@ -321,50 +343,52 @@
             <!-- Card 1 -->
             <div
               class="bg-bloom-dark/40 p-6 border border-bloom-text/10 hover:border-bloom-blue/50 transition-colors duration-300 group">
-              <h4 class="font-heading text-bloom-blue text-lg mb-2 group-hover:translate-x-1 transition-transform">
-                Patience</h4>
-              <p class="text-sm text-bloom-text-secondary">Creativity helps us endure and "guess" the outcome of events,
-                making the wait for daily realities bearable.</p>
+              <h4 class="font-heading text-bloom-blue text-lg mb-2 group-hover:translate-x-1 transition-transform"
+                data-i18n="mental.card1.title">Kesabaran</h4>
+              <p class="text-sm text-bloom-text-secondary" data-i18n="mental.card1.desc">Kreativitas membantu kita
+                bertahan dan "menebak" hasil peristiwa, membuat penantian akan realitas sehari-hari tertahankan.</p>
             </div>
             <!-- Card 2 -->
             <div
               class="bg-bloom-dark/40 p-6 border border-bloom-text/10 hover:border-bloom-orange/50 transition-colors duration-300 group">
-              <h4 class="font-heading text-bloom-orange text-lg mb-2 group-hover:translate-x-1 transition-transform">
-                Expressing Feelings</h4>
-              <p class="text-sm text-bloom-text-secondary">A tool to make things easier. Channeling emotions through
-                film, games, music, and distinct mediums.</p>
+              <h4 class="font-heading text-bloom-orange text-lg mb-2 group-hover:translate-x-1 transition-transform"
+                data-i18n="mental.card2.title">Mengekspresikan Perasaan</h4>
+              <p class="text-sm text-bloom-text-secondary" data-i18n="mental.card2.desc">Alat untuk mempermudah
+                segalanya. Menyalurkan emosi melalui film, game, musik, dan media yang berbeda.</p>
             </div>
             <!-- Card 3 -->
             <div
               class="bg-bloom-dark/40 p-6 border border-bloom-text/10 hover:border-red-500/50 transition-colors duration-300 group">
-              <h4 class="font-heading text-red-500 text-lg mb-2 group-hover:translate-x-1 transition-transform">Fighting
-                Depression</h4>
-              <p class="text-sm text-bloom-text-secondary">Depression is silenced expression. Creativity is the act of
-                learning to fight that silence and validate your own voice.</p>
+              <h4 class="font-heading text-red-500 text-lg mb-2 group-hover:translate-x-1 transition-transform"
+                data-i18n="mental.card3.title">Melawan Depresi</h4>
+              <p class="text-sm text-bloom-text-secondary" data-i18n="mental.card3.desc">Depresi adalah ekspresi yang
+                dibungkam. Kreativitas adalah tindakan belajar melawan keheningan itu dan memvalidasi suaramu sendiri.
+              </p>
             </div>
             <!-- Card 4 -->
             <div
               class="bg-bloom-dark/40 p-6 border border-bloom-text/10 hover:border-purple-500/50 transition-colors duration-300 group">
-              <h4 class="font-heading text-purple-500 text-lg mb-2 group-hover:translate-x-1 transition-transform">
-                Designing a Work</h4>
-              <p class="text-sm text-bloom-text-secondary">It's about knowing what you want to say and finding the right
-                references to convey that message effectively.</p>
+              <h4 class="font-heading text-purple-500 text-lg mb-2 group-hover:translate-x-1 transition-transform"
+                data-i18n="mental.card4.title">Merancang Karya</h4>
+              <p class="text-sm text-bloom-text-secondary" data-i18n="mental.card4.desc">Ini tentang mengetahui apa yang
+                ingin kamu sampaikan dan menemukan referensi yang tepat untuk menyampaikan pesan itu secara efektif.</p>
             </div>
             <!-- Card 5 -->
             <div
               class="bg-bloom-dark/40 p-6 border border-bloom-text/10 hover:border-yellow-500/50 transition-colors duration-300 group">
-              <h4 class="font-heading text-yellow-500 text-lg mb-2 group-hover:translate-x-1 transition-transform">
-                Making Great Work</h4>
-              <p class="text-sm text-bloom-text-secondary">Becoming a "Giant Voice" that represents the unrepresented,
-                creating openness and dialogue.</p>
+              <h4 class="font-heading text-yellow-500 text-lg mb-2 group-hover:translate-x-1 transition-transform"
+                data-i18n="mental.card5.title">Membuat Karya Besar</h4>
+              <p class="text-sm text-bloom-text-secondary" data-i18n="mental.card5.desc">Menjadi "Suara Raksasa" yang
+                mewakili mereka yang tidak terwakili, menciptakan keterbukaan dan dialog.</p>
             </div>
             <!-- Card 6 -->
             <div
               class="bg-bloom-dark/40 p-6 border border-bloom-text/10 hover:border-green-500/50 transition-colors duration-300 group">
-              <h4 class="font-heading text-green-500 text-lg mb-2 group-hover:translate-x-1 transition-transform">Moral
-                Responsibility</h4>
-              <p class="text-sm text-bloom-text-secondary">With a "giant voice" comes the responsibility to uphold good
-                morals. Irresponsibility leads to chaos.</p>
+              <h4 class="font-heading text-green-500 text-lg mb-2 group-hover:translate-x-1 transition-transform"
+                data-i18n="mental.card6.title">Tanggung Jawab Moral</h4>
+              <p class="text-sm text-bloom-text-secondary" data-i18n="mental.card6.desc">Dengan "suara raksasa"
+                muncullah tanggung jawab untuk menjunjung tinggi moral yang baik. Ketidakbertanggungjawaban mengarah
+                pada kekacauan.</p>
             </div>
           </div>
         </div>
@@ -378,8 +402,9 @@
         <!-- New Title Deco -->
         <img src="./resources/Decor_Diamond.png" class="absolute left-1/2 -top-10 -translate-x-1/2 w-12 opacity-50">
 
-        <h2 class="font-heading text-3xl md:text-5xl lg:text-6xl text-center mb-8 inline-block relative">
-          Bloom <span class="text-bloom-blue">IN MOTION</span>
+        <h2 class="font-heading text-3xl md:text-5xl lg:text-6xl text-center mb-8 inline-block relative"
+          data-i18n="gallery.title">
+          Bloom <span class="text-bloom-blue">DALAM GERAKAN</span>
         </h2>
         <div class="w-full h-px bg-gradient-to-r from-transparent via-bloom-text-secondary to-transparent opacity-30">
         </div>
@@ -400,7 +425,7 @@
                 <img src="./resources/Image_Carousel_1.jpg" alt="Gallery 1" class="w-full h-full object-cover">
                 <div
                   class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                  <p class="font-heading text-white text-lg">Main Stage</p>
+                  <p class="font-heading text-white text-lg" data-i18n="gallery.slide1">Panggung Utama</p>
                 </div>
               </div>
             </div>
@@ -411,7 +436,7 @@
                 <img src="./resources/Image_Carousel_2.jpg" alt="Gallery 2" class="w-full h-full object-cover">
                 <div
                   class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                  <p class="font-heading text-white text-lg">Crowd Energy</p>
+                  <p class="font-heading text-white text-lg" data-i18n="gallery.slide2">Energi Penonton</p>
                 </div>
               </div>
             </div>
@@ -422,7 +447,7 @@
                 <img src="./resources/Image_Carousel_3.jpg" alt="Gallery 3" class="w-full h-full object-cover">
                 <div
                   class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                  <p class="font-heading text-white text-lg">Workshops</p>
+                  <p class="font-heading text-white text-lg" data-i18n="gallery.slide3">Lokakarya</p>
                 </div>
               </div>
             </div>
