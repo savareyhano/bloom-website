@@ -153,49 +153,49 @@ function initCarousel() {
 // Language Handling
 const translations = {
   id: {
-    "nav.buy_ticket": "BELI TIKET",
-    "hero.next_show": "PERTUNJUKAN BERIKUTNYA!!",
+    "nav.buy_ticket": "AMBIL TIKET",
+    "hero.next_show": "SHOW SELANJUTNYA!!",
     "hero.date.day": "JUMAT",
     "hero.date.month": "14 FEBRUARI",
-    "hero.desc": "Bergabunglah dalam malam eksklusif musik dan sesi kesehatan mental.",
-    "hero.get_tickets": "DAPATKAN TIKET",
-    "about.tag": "APA ITU Bloom",
-    "about.title": "Oase untuk <span class=\"text-bloom-orange\">Pertumbuhan yang Menginspirasi, Mekar di Setiap Tikungan</span>",
-    "about.desc": "Di mana musik dan kesehatan mental bertemu. Lebih dari sekadar tren, ini adalah ruang untuk penyembuhan, koneksi, dan merasa baik luar dalam.",
-    "feature.concert.tag": "PENGALAMAN",
-    "feature.concert.title": "BUKAN SEKADAR <span class=\"text-transparent bg-clip-text bg-gradient-to-r from-bloom-orange to-red-500\">KONSER</span>",
-    "feature.concert.desc": "Bloom lebih dari sekadar cahaya dan dentuman keras, ini adalah ruang aman untuk menari, melepaskan penat, dan menjadi diri sendiri.",
-    "feature.energy.tag": "KESEHATAN",
-    "feature.energy.title": "ENERGI <span class=\"text-transparent bg-clip-text bg-gradient-to-r from-bloom-blue to-purple-500\">POSITIF + KEJERNIHAN MENTAL</span>",
-    "feature.energy.desc": "Utamakan kesehatan, Bloom hadir untuk mengingatkan \"tidak apa-apa untuk melambat dan memeriksa diri sendiri.\"",
-    "mental.insight": "WAWASAN",
-    "mental.culture.title": "BUDAYA <span class=\"text-transparent bg-clip-text bg-gradient-to-r from-bloom-cream to-white\">KREATIF</span>",
-    "mental.culture.desc1": "Dalam ekosistem sosial yang didasari kreativitas, kita sering mengungkap masalah kesehatan mental saat menggali kedalaman artistik kita. Terkadang, kita digiring ke budaya ini karena kebutuhan.",
-    "mental.culture.quote": "\"Secara pribadi saya merasa terkucilkan, kurang relevan di lingkungan terdekat saya. Mencari validasi dengan cara yang unik karena suara saya tidak terwakili oleh kelompok sosial yang dominan.\"",
-    "mental.culture.desc2": "Kreativitas memungkinkan kita memvalidasi suara kita sendiri ketika lingkungan gagal melakukannya. Ini membuka dialog untuk menemukan \"keterbukaan\" dan koneksi.",
-    "mental.origin.title": "ASAL USUL <span class=\"text-bloom-blue\">DIDEFINISIKAN ULANG</span>",
-    "mental.origin.desc": "Apakah pergulatan mental melahirkan kreativitas, atau apakah pikiran kreatif menjadi tempat berkembang biak bagi pergulatan mental?",
-    "mental.question": "PERTANYAAN",
-    "mental.answer": "JAWABAN",
-    "mental.egg_quote": "\"Telur <span class=\"text-bloom-orange\">tidak mendefinisikan</span> ayam\"",
-    "mental.egg_desc": "Asal usulmu tidak menentukan siapa dirimu kelak. Kamu tidak didefinisikan oleh trauma atau \"cangkang\" tempatmu berasal.",
-    "mental.excerpt": "Kutipan dari \"Kesehatan Mental & Budaya Kreatif\"",
-    "mental.card1.title": "Kesabaran",
-    "mental.card1.desc": "Kreativitas membantu kita bertahan dan \"menebak\" hasil peristiwa, membuat penantian akan realitas sehari-hari tertahankan.",
-    "mental.card2.title": "Mengekspresikan Perasaan",
-    "mental.card2.desc": "Alat untuk mempermudah segalanya. Menyalurkan emosi melalui film, game, musik, dan media yang berbeda.",
-    "mental.card3.title": "Melawan Depresi",
-    "mental.card3.desc": "Depresi adalah ekspresi yang dibungkam. Kreativitas adalah tindakan belajar melawan keheningan itu dan memvalidasi suaramu sendiri.",
-    "mental.card4.title": "Merancang Karya",
-    "mental.card4.desc": "Ini tentang mengetahui apa yang ingin kamu sampaikan dan menemukan referensi yang tepat untuk menyampaikan pesan itu secara efektif.",
-    "mental.card5.title": "Membuat Karya Besar",
-    "mental.card5.desc": "Menjadi \"Suara Raksasa\" yang mewakili mereka yang tidak terwakili, menciptakan keterbukaan dan dialog.",
+    "hero.desc": "Gabung di malam penuh musik dan sesi <i>mental wellness</i> yang eksklusif.",
+    "hero.get_tickets": "AMBIL TIKET",
+    "about.tag": "APA SIH Bloom?",
+    "about.title": "Oase buat <span class=\"text-bloom-orange\">Tumbuh Bareng, Mekar di Tiap Langkah</span>",
+    "about.desc": "Titik temu musik dan <i>mental health</i>. Bukan cuma tren, ini ruang buat <i>healing</i>, koneksi, dan ngerasa <i>good vibes</i> luar dalem.",
+    "feature.concert.tag": "EXPERIENCE",
+    "feature.concert.title": "BUKAN CUMA <span class=\"text-transparent bg-clip-text bg-gradient-to-r from-bloom-orange to-red-500\">KONSER</span>",
+    "feature.concert.desc": "Bloom itu lebih dari sekadar lampu sorot dan bass kenceng. Ini <i>safe space</i> buat lo joget, lepas penat, dan jadi diri sendiri.",
+    "feature.energy.tag": "WELLNESS",
+    "feature.energy.title": "ENERGI <span class=\"text-transparent bg-clip-text bg-gradient-to-r from-bloom-blue to-purple-500\">POSITIF + PIKIRAN JERNIH</span>",
+    "feature.energy.desc": "<i>Wellness</i> itu prioritas. Bloom hadir buat ngingetin kalau \"gapapa banget buat pelan-pelan dan cek kondisi diri sendiri.\"",
+    "mental.insight": "INSIGHT",
+    "mental.culture.title": "KULTUR <span class=\"text-transparent bg-clip-text bg-gradient-to-r from-bloom-cream to-white\">KREATIF</span>",
+    "mental.culture.desc1": "Di dunia kreatif, seringkali isu <i>mental health</i> muncul pas kita lagi dalemin seni. Kadang, kita terjebak di situasi ini karena keadaan.",
+    "mental.culture.quote": "\"Jujur gue ngerasa tersisih, kurang relevan di lingkungan sekitar. Nyari validasi dengan cara unik karena suara gue gak terwakili sama kelompok mayoritas.\"",
+    "mental.culture.desc2": "Lewat karya, kita bisa validasi suara kita sendiri pas lingkungan gagal ngelakuin itu. Ini buka jalan buat 'keterbukaan' dan koneksi baru.",
+    "mental.origin.title": "ASAL-USUL <span class=\"text-bloom-blue\">DIDEFINISIKAN ULANG</span>",
+    "mental.origin.desc": "Apa masalah mental yang ngelahirin kreativitas, atau pikiran kreatif emang tempat subur buat masalah mental?",
+    "mental.question": "PERTANYAANNYA",
+    "mental.answer": "JAWABANNYA",
+    "mental.egg_quote": "\"Telur <span class=\"text-bloom-orange\">gak nentuin</span> ayamnya\"",
+    "mental.egg_desc": "Asal-usul lo gak nentuin masa depan lo. Lo gak didefinisiin sama trauma atau \"cangkang\" masa lalu lo.",
+    "mental.excerpt": "Kutipan dari \"Mental Health & Creative Culture\"",
+    "mental.card1.title": "Sabar Aja",
+    "mental.card1.desc": "Kreativitas bantu kita bertahan dan \"nebak\" hasil akhir, bikin penantian sehari-hari jadi lebih ringan.",
+    "mental.card2.title": "Luapin Perasaan",
+    "mental.card2.desc": "Alat biar lega. Salurin emosi lewat film, game, musik, dan media beda lainnya.",
+    "mental.card3.title": "Lawan Depresi",
+    "mental.card3.desc": "Depresi itu ekspresi yang diredam. Berkarya adalah cara belajar ngelawan keheningan itu dan validasi suara lo sendiri.",
+    "mental.card4.title": "Rancang Karyamu",
+    "mental.card4.desc": "Paham apa yang mau lo sampein dan cari referensi yang pas biar pesannya nyampe dengan efektif.",
+    "mental.card5.title": "Bikin Karya Gede",
+    "mental.card5.desc": "Jadi \"Suara Raksasa\" yang mewakili mereka yang gak didenger, ciptain keterbukaan dan obrolan.",
     "mental.card6.title": "Tanggung Jawab Moral",
-    "mental.card6.desc": "Dengan \"suara raksasa\" muncullah tanggung jawab untuk menjunjung tinggi moral yang baik. Ketidakbertanggungjawaban mengarah pada kekacauan.",
-    "gallery.title": "Bloom <span class=\"text-bloom-blue\">DALAM GERAKAN</span>",
-    "gallery.slide1": "Panggung Utama",
-    "gallery.slide2": "Energi Penonton",
-    "gallery.slide3": "Lokakarya"
+    "mental.card6.desc": "Punya \"suara gede\" berarti harus punya moral yang bener juga. Kalau asal-asalan, malah jadi kacau.",
+    "gallery.title": "Bloom <span class=\"text-bloom-blue\">IN MOTION</span>",
+    "gallery.slide1": "Main Stage",
+    "gallery.slide2": "Crowd Energy",
+    "gallery.slide3": "Workshop"
   },
   en: {
     "nav.buy_ticket": "BUY TICKET",
@@ -248,7 +248,7 @@ let currentLang = 'id'; // Default
 
 document.addEventListener('DOMContentLoaded', () => {
     // ... previous initCarousel logic is already running from line 4 ...
-    
+
     const langToggle = document.getElementById('langToggle');
     if (langToggle) {
         langToggle.addEventListener('click', () => {
@@ -274,6 +274,6 @@ function updateLanguage() {
         // Option 2: Static "ID | EN" with active state?
         // Let's keep it simple: "ID | EN" but maybe highlight?
         // Or just toggle text:
-        langToggle.textContent = currentLang === 'id' ? "ID | EN" : "EN | ID"; 
+        langToggle.textContent = currentLang === 'id' ? "ID | EN" : "EN | ID";
     }
 }
